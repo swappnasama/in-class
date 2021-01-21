@@ -1,0 +1,54 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Playfair Display', serif;
+  font-weight:500;
+}
+a,a:hover,a:visited,a:active{
+  text-decoration: none;
+  color:white;
+}
+blockquote{
+  font-weight:200;
+  font-style: italic;
+  font-variant:small-caps;
+  word-spacing:10px;
+  letter-spacing:5px;
+  quotes: "\201C""\201D""\2018""\2019";  
+   
+}
+
+ul{
+  list-style: square inside;
+  float:left;
+  width:100%;
+  font-size: 18px;
+  font:clamp(18px,24vw,1.5rem);
+  
+}
+.nav{
+  list-style: none;
+  background-color:coral; 
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.nav li{
+  padding: 20px;
+  margin: 20px;
+  font-family:'Playfair Display', serif ;
+  font-weight:bold;
+}
+p::first-letter{
+  font-size:150%;;
+}
+blockquote::before{
+  content:open-quote;
+  padding: 10px;
+}
+blockquote::after{
+  content:close-quote;
+  padding: 10px;
+}

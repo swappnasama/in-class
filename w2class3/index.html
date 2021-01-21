@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codepen and Lorem Picsum</title>
+    
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Roboto&display=swap');
+    
+    /* styles for body*/
+    body{
+      font-family: 'Roboto', sans-serif;
+      font-size:14px;
+    }
+    /*styles for main section*/
+    main{
+      width:80vw;
+      max-width:125ch;
+      margin:auto;
+    }
+    /*list styles*/
+    ul{ list-style-type: square;}
+    /*blockquote styles*/
+    blockquote{
+      border: 2px solid black;
+      background-color: gray;
+      border-radius: 5px;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+    /*Flex box styles*/
+    .flex-container{
+      margin:10px;
+      padding:10px;
+      border:5px solid black;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-around;
+    }
+    .flex-container div{
+      width:300px;
+      height:300px;
+      margin:10px;
+      background-color:pink;
+      border:5px solid black;
+    }
+    .flex-container div:hover{
+      background-color:orange;
+      opacity:.7;
+    }
+    /*image styles*/
+    img {
+      width: 150px;
+      float: left;
+      margin-left: -50px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      border: 1px solid black;
+      border-radius: 50%;
+      shape-outside: circle(50%);
+    
+    }
+    /*clipped images tyles*/
+    /*triangle shape styles*/
+    .triangle {
+      float: right;
+      /* Mask the image. To create your own clip paths, try https://bennettfeely.com/clippy/ */
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      /* Float the text aroung the same shape. */
+      shape-outside: polygon(50% 0%, 100% 100%, 0% 100%);
+      background-image:url("https://picsum.photos/seed/picsum/200/300");
+    }
+
+    /*trapezoid shape styles*/
+    .trapezoid {
+      
+      float: left;
+      margin-left: -150px;
+      background-image:url("https://picsum.photos/200/300?grayscale");
+      /* Mask the image. To create your own clip paths, try https://bennettfeely.com/clippy/ */
+
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+      /* Float the text aroung the same shape. */
+      shape-outside: polygon(4% 4%, 72% 10%, 100% 37%, 80% 58%, 92% 75%, 53% 96%, 2% 98%);
+    }
+
+  </style>
+</head>
+<body>
+    <main>
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Lorem Picsum"/>
+      <h1>CSS1</h1>
+      
+      <P>In the first CSS specification,[2] authors specified font characteristics via a series of properties:</P>
+      In the first CSS specification,[2] authors specified font characteristics via a series of properties:
+      <UL>
+        <li>font-family</li>
+        <li>ont-style</li>
+        <li>font-style</li>
+        <li>font-variant</li>
+        <li>font-weight</li>
+        <li>font-size</li>
+        
+      </UL>
+      <p>All fonts were identified solely by name. Beyond the properties mentioned above, designers had no way to style fonts, and no mechanism existed to select fonts not present on the client system.</p>
+      <h2>Web-safe fonts</h2>
+      <p>Web-safe fonts are fonts likely to be present on a wide range of computer systems, and used by Web content authors to increase the likelihood that content displays in their chosen font. If a visitor to a Web site does not have the specified font, their browser tries to select a similar alternative, based on the author-specified fallback fonts and generic families or it uses font substitution defined in the visitor's operating system.</p>
+      <h3>Microsoft's Core fonts for the Web</h3>
+      <p>Since being released under Microsoft's Core fonts for the Web program, Arial, Georgia, and Verdana have become three de facto fonts of the Web.</p>
+      <h3>Main article:</h3> 
+      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur ad eligendi alias saepe molestias quas error dignissimos assumenda, exercitationem, perspiciatis veritatis debitis perferendis labore amet deserunt sed vel distinctio!</blockquote>
+      <p>Core fonts for the Web To ensure that all Web users had a basic set of fonts, Microsoft started the Core fonts for the Web initiative in 1996 (terminated in 2002). Released fonts include Arial, Courier New, Times New Roman, Comic Sans, Impact, Georgia, Trebuchet, Webdings and Verdana—under an EULA that made them freely distributable but also limited some rights to their use. Their high penetration rate has made them a staple for Web designers. However, most Linux distributions don't include these fonts by default.</p>
+      <p>CSS2 attempted to increase the tools available to Web developers by adding font synthesis, improved font matching and the ability to download remote fonts.</p>
+      <p>Some <strong>CSS2</strong> font properties were removed from CSS2.1 and later included in CSS3.[4][5]</p>
+      <h3>Flex Box</h3>
+      <div class="flex-container">
+        <div class="triangle"></div>
+        <div class="trapezoid"></div>
+        <div></div>
+        
+      </div>
+    </main>
+  
+</body>
+</html>
