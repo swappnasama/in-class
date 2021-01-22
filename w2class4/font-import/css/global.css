@@ -1,0 +1,8 @@
+blockquote::before{
+  content:open-quote;
+  padding: 10px;
+}
+blockquote::after{
+  content:close-quote;
+  padding: 10px;
+}
