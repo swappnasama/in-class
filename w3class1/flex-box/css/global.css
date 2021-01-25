@@ -1,0 +1,99 @@
+/*Reset CSS*/
+body{
+  margin: 0;
+  padding: 0;
+  font-style: 18px;
+  color:black;
+  font-family: 'Oswald', sans-serif;
+}
+a,a:hover, a:active,a:visited{
+  text-decoration: none;
+  color:black;
+}
+/* Horizontal Navigation styles*/
+.container{
+  display: flex;
+  flex: auto;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+ul li  a{
+  padding:20px;
+ 
+  font-size: 24px;
+ 
+  
+}
+ul li a:hover{
+  background-color: red;
+  color:white;
+}
+.mobile-nav{
+  display:none;
+}
+header{
+  background: lightblue;
+  padding: 20px;
+  box-shadow: 5px cadetblue;
+  box-shadow: 0 0px 5px 0;
+}
+/*Main section styles*/
+main{
+  width:80vw;
+  max-width: 95ch;
+  margin: 0 auto;
+}
+/*Banner styles*/
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner div{
+  margin: 20px;
+}
+.picture{
+  width:300px;
+  
+}
+.picture img{
+  border-radius: 50%;
+  width:100%;
+  
+}
+.content{
+  flex:auto;
+}
+
+/*equal spacinf flex*/
+.equal-spacing-container{
+  display:flex;
+  justify-content:space-between;
+  flex:auto;
+}
+/*equal-spacing-columns*/
+.equal-spacing-columns{
+  display:flex;
+}
+.equal-spacing-columns li{
+  flex:3;
+}
+/* center aligning flex items*/
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+  
+  .child {
+    width: 100px;
+    color: white;
+    background-color: teal;
+    padding: 14px;
+  
+  }
+  
